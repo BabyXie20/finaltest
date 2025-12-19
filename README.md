@@ -23,18 +23,18 @@
 - **`reset_soft_n.v`**：硬复位键 + 软件触发复位合成。
 - **`time_splitter.v`**：倒计时显示拆分（NS/EW 十位/个位与模式显示）。
 - **`tlc_core_stage1.v`**：交通灯控制核心（固定/感应/夜间/封禁模式，含行人覆盖）。
-- **`veh_req_latch.v`**：无文件头注释（模块 `veh_req_latch`）。
+- **`veh_req_latch.v`**：车辆请求锁存模块（`veh_req_latch`）。
 - **`vga_anim_phase.v`**：VGA 动画相位生成（帧/秒步进）。
 - **`vga_sync_640x480.v`**：VGA 640x480@60Hz 时序发生器。
 - **`violation_det.v`**：闯红灯检测（进入边界时红灯锁存）。
 
 ## `V/` 目录 `.v` 文件
-- **`V/D8M_LUT.v`**：无文件头注释（模块 `D8M_LUT`）。
-- **`V/FpsMonitor.v`**：无文件头注释（模块 `FpsMonitor`）。
-- **`V/I2C_READ_DATA.v`**：无文件头注释（模块 `I2C_READ_DATA`）。
-- **`V/I2C_RESET_DELAY.v`**：无文件头注释（模块 `I2C_RESET_DELAY`）。
-- **`V/I2C_WRITE_PTR.v`**：无文件头注释（模块 `I2C_WRITE_PTR`）。
-- **`V/I2C_WRITE_WDATA.v`**：无文件头注释（模块 `I2C_WRITE_WDATA`）。
+- **`V/D8M_LUT.v`**：D8M 摄像头像素查找/处理模块（`D8M_LUT`）。
+- **`V/FpsMonitor.v`**：帧率监视模块（`FpsMonitor`）。
+- **`V/I2C_READ_DATA.v`**：I2C 读数据模块（`I2C_READ_DATA`）。
+- **`V/I2C_RESET_DELAY.v`**：I2C 复位延时模块（`I2C_RESET_DELAY`）。
+- **`V/I2C_WRITE_PTR.v`**：I2C 写指针模块（`I2C_WRITE_PTR`）。
+- **`V/I2C_WRITE_WDATA.v`**：I2C 写数据模块（`I2C_WRITE_WDATA`）。
 - **`V/MIPI_PLL.v`**：Altera PLL 生成文件（MIPI_PLL）。
 - **`V/Reset_Delay_DRAM.v`**：Terasic 版权的复位延时模块说明。
 - **`V/SDRAM_PLL.v`**：Altera PLL 生成文件（SDRAM_PLL）。
@@ -46,18 +46,18 @@
 - **`V_D8M/B_GAIN_bb.v`**：LPM_CONSTANT 黑盒声明。
 - **`V_D8M/FRAM_BUFF.v`**：altsyncram 双口 RAM。
 - **`V_D8M/FRAM_BUFF_bb.v`**：altsyncram 黑盒声明。
-- **`V_D8M/FRM_COUNTER.v`**：无文件头注释（帧计数器）。
+- **`V_D8M/FRM_COUNTER.v`**：帧计数器（`FRM_COUNTER`）。
 - **`V_D8M/G_GAIN.v`**：LPM_CONSTANT 常量（增益）。
 - **`V_D8M/G_GAIN_bb.v`**：LPM_CONSTANT 黑盒声明。
-- **`V_D8M/Line_Buffer_J.v`**：无文件头注释（行缓冲）。
-- **`V_D8M/MIPI_BRIDGE_CAMERA_Config.v`**：无文件头注释（MIPI/Camera I2C 配置）。
-- **`V_D8M/MIPI_BRIDGE_CONFIG.v`**：无文件头注释（MIPI 桥配置）。
-- **`V_D8M/MIPI_CAMERA_CONFIG.v`**：无文件头注释（摄像头配置）。
-- **`V_D8M/ON_CHIP_FRAM.v`**：无文件头注释（片上帧缓存）。
-- **`V_D8M/RAM_READ_COUNTER.v`**：开头注释“RAW TO RGB”。
+- **`V_D8M/Line_Buffer_J.v`**：行缓冲模块（`Line_Buffer_J`）。
+- **`V_D8M/MIPI_BRIDGE_CAMERA_Config.v`**：MIPI/Camera I2C 配置模块（`MIPI_BRIDGE_CAMERA_Config`）。
+- **`V_D8M/MIPI_BRIDGE_CONFIG.v`**：MIPI 桥配置模块（`MIPI_BRIDGE_CONFIG`）。
+- **`V_D8M/MIPI_CAMERA_CONFIG.v`**：摄像头配置模块（`MIPI_CAMERA_CONFIG`）。
+- **`V_D8M/ON_CHIP_FRAM.v`**：片上帧缓存模块（`ON_CHIP_FRAM`）。
+- **`V_D8M/RAM_READ_COUNTER.v`**：RAW TO RGB 读计数模块（`RAM_READ_COUNTER`）。
 - **`V_D8M/RAW2RGB_J.v`**：RAW Bayer → RGB 输出模块（行缓冲/插值/坐标对齐）。
-- **`V_D8M/RAW2RGB_J.v.bak`**：无文件头注释（RAW2RGB 旧版）。
-- **`V_D8M/RAW_RGB_BIN.v`**：无文件头注释（RAW 解码）。
+- **`V_D8M/RAW2RGB_J.v.bak`**：RAW2RGB 旧版模块（`RAW2RGB_J` 备份）。
+- **`V_D8M/RAW_RGB_BIN.v`**：RAW 解码模块（`RAW_RGB_BIN`）。
 - **`V_D8M/int_line.v`**：altsyncram 双口 RAM。
 - **`V_D8M/int_line_bb.v`**：altsyncram 黑盒声明。
 
@@ -73,19 +73,19 @@
 - **`V_Sdram_Control/Sdram_Params.h`**：SDRAM 地址/总线参数宏定义。
 
 ## `V_Auto/` 目录 `.v` 文件
-- **`V_Auto/AUTO_FOCUS_ON.v`**：无文件头注释（自动对焦触发）。
-- **`V_Auto/AUTO_SYNC_MODIFY.v`**：开头注释“AUTO SYNC_TO_NS”。
-- **`V_Auto/CLOCKMEM.v`**：无文件头注释（1Hz 生成）。
-- **`V_Auto/FOCUS_ADJ.v`**：开头注释“AutoFous”。
-- **`V_Auto/F_VCM.v`**：无文件头注释（VCM 相关）。
-- **`V_Auto/I2C_DELAY.v`**：无文件头注释（I2C 延时）。
-- **`V_Auto/LCD_COUNTER.v`**：无文件头注释（行场计数）。
-- **`V_Auto/MODIFY_SYNC.v`**：无文件头注释（同步修改）。
-- **`V_Auto/RESET_DELAY.v`**：无文件头注释（复位延时）。
-- **`V_Auto/VCM_CTRL_P.v`**：无文件头注释（VCM 控制）。
-- **`V_Auto/VCM_I2C.v`**：无文件头注释（VCM I2C）。
-- **`V_Auto/VCM_STEP.v`**：无文件头注释（VCM 步进）。
-- **`V_Auto/VCM_TEST.v`**：无文件头注释（VCM 测试）。
+- **`V_Auto/AUTO_FOCUS_ON.v`**：自动对焦触发模块（`AUTO_FOCUS_ON`）。
+- **`V_Auto/AUTO_SYNC_MODIFY.v`**：自动同步修改模块（`AUTO_SYNC_MODIFY`）。
+- **`V_Auto/CLOCKMEM.v`**：1Hz 时钟生成模块（`CLOCKMEM`）。
+- **`V_Auto/FOCUS_ADJ.v`**：自动对焦调整模块（`FOCUS_ADJ`）。
+- **`V_Auto/F_VCM.v`**：VCM 控制相关模块（`F_VCM`）。
+- **`V_Auto/I2C_DELAY.v`**：I2C 延时模块（`I2C_DELAY`）。
+- **`V_Auto/LCD_COUNTER.v`**：行场计数模块（`LCD_COUNTER`）。
+- **`V_Auto/MODIFY_SYNC.v`**：同步修改模块（`MODIFY_SYNC`）。
+- **`V_Auto/RESET_DELAY.v`**：复位延时模块（`RESET_DELAY`）。
+- **`V_Auto/VCM_CTRL_P.v`**：VCM 控制模块（`VCM_CTRL_P`）。
+- **`V_Auto/VCM_I2C.v`**：VCM I2C 通信模块（`VCM_I2C`）。
+- **`V_Auto/VCM_STEP.v`**：VCM 步进模块（`VCM_STEP`）。
+- **`V_Auto/VCM_TEST.v`**：VCM 测试模块（`VCM_TEST`）。
 
 ## `.c` 文件
 - 未发现 `.c` 文件。
