@@ -1,9 +1,9 @@
 # finaltest 交通灯工程 README
 
-本 README 仅基于仓库内 `.v`、`.c`、`.h` 文件的**开头注释或首行内容**整理（本工程中仅存在 `.v` 与少量 `.h`，未发现 `.c` 文件）。顶层为 `systemtop.v`。
+
 
 ## 顶层模块
-- **`systemtop.v`**：板级顶层（DE1/类似平台）。提供 640x480 VGA 十字路口交通灯场景；摄像头画中画经 SDRAM 缓存和 RAW2RGB 转换后缩放至 200x150，并叠加至右下角；PIP 模块输出 25MHz VGA 像素时钟。
+- **`systemtop.v`**：板级顶层（DE1.SOC平台）。提供 640x480 VGA 十字路口交通灯场景；摄像头画中画经 SDRAM 缓存和 RAW2RGB 转换后缩放至 200x150，并叠加至右下角；PIP 模块输出 25MHz VGA 像素时钟。
 
 ## 根目录 `.v` 文件
 - **`ScaleBuf200x150.v`**：640x480 像素流缩放缓存到 200x150，双缓冲读出。
@@ -86,6 +86,3 @@
 - **`V_Auto/VCM_I2C.v`**：VCM I2C 通信模块（`VCM_I2C`）。
 - **`V_Auto/VCM_STEP.v`**：VCM 步进模块（`VCM_STEP`）。
 - **`V_Auto/VCM_TEST.v`**：VCM 测试模块（`VCM_TEST`）。
-
-## `.c` 文件
-- 未发现 `.c` 文件。
