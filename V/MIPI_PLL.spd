@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file path="MIPI_PLL_sim/MIPI_PLL.vo" type="VERILOG" />
+ <topLevel name="MIPI_PLL" />
+ <deviceFamily name="cyclonev" />
+</simPackage>
